@@ -1,0 +1,28 @@
+
+create database studentDb;
+use studentDb;
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    age INT,
+    mobile VARCHAR(15),
+    gender VARCHAR(10),
+    address varchar(200)
+);
+
+select * from students;
+
+delete from students;
+delete from students where id= 792;
+
+ ALTER TABLE students ADD COLUMN photo blob;
+ 
+ delete from students where photo;
+ ALTER TABLE students DROP COLUMN image;
+  use project;
+  select * from messages;
+   ALTER table messages 
+   add column degin varchar(200);
+  
+ ALTER TABLE students DROP COLUMN photo;
+
